@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="petproz, site, website" />
+    <meta property="og:title" content="PetProz" />
+    <meta property="og:type" content="website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/patterns.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>PetProz</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <section class="container">
+        <div>
+          <a class="logo" href="../index.html">Pet<strong>Proz</strong></a>
+        </div>
+        <nav id="nav">
+          <div id="btn-mobile">
+            <span id="hamburguer"></span>
+          </div>
+          <ul id="menu">
+            <li class="active">
+              <a class="active" href="../index.html">Sobre</a>
+            </li>
+            <li>
+              <a href="./doacao.html">Doação</a>
+            </li>
+            <li>
+              <a href="./adotar.html">Adoção</a>
+            </li>
+            <li>
+              <a href="./contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <a href="./cadastro.html">
+            <button class="btn-principal">Crie Sua Conta</button>
+          </a>
+          <a href="./login.html">
+            <button class="btn-principal .btn-principal-secundario">
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </button>
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <h1 id="teste-escrever">Seja Bem Vindo (a)</h1>
+      <h4>Insira seus dados de login</h4>
+      <div class="clear"></div>
+      <form id="form">
+        <div>
+          <label for="email">E-mail:</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Digite seu e-mail cadastrado"
+            id="email"
+            class="required"
+            oninput="emailValidate() "
+          />
+          <span class="span-required">Digite um email válido</span>
+        </div>
+        <div>
+          <label for="password">Senha:</label><br />
+          <input
+            type="password"
+            name="senha"
+            placeholder="Digite sua senha"
+            class="required"
+            oninput="mainPasswordValidate()"
+          />
+          <span class="span-required"
+            >Digite uma senha com no mínimo 8 caracteres</span
+          >
+        </div>
+
+        <section class="div-btn">
+          <div>
+            <a href="">
+              <button
+                class="btn-principal btn-principal-secundario"
+                type="submit"
+              >
+                Cancelar
+              </button>
+            </a>
+          </div>
+          <div>
+            <button class="btn-principal" type="submit">Entrar</button>
+          </div>
+        </section>
+        <div id="elementoPai">
+          <span id="span-h6"></span>
+          <span id="span-h5"></span>
+        </div>
+        <div>
+          <p>
+            Ainda não possui conta ?<a href3="./cadastro.html">Cadastre-se</a>
+          </p>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <section class="container">
+        <p>Todos os direitos reservados à Pet<strong>Proz</strong></p>
+      </section>
+    </footer>
+    <!-- -->
+    <script src="../js/validacao-login.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

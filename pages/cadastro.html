@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="petproz, site, website" />
+  <meta property="og:title" content="PetProz" />
+  <meta property="og:type" content="website" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/grid.css" />
+  <link rel="stylesheet" href="../css/patterns.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PetProz</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <section class="container">
+      <div>
+        <a class="logo" href="../index.html">Pet<strong>Proz</strong></a>
+      </div>
+      <nav id="nav">
+        <div id="btn-mobile">
+          <span id="hamburguer"></span>
+        </div>
+        <ul id="menu">
+          <li class="active">
+            <a class="active" href="../index.html">Sobre</a>
+          </li>
+          <li>
+            <a href="./doacao.html">Doação</a>
+          </li>
+          <li>
+            <a href="./adotar.html">Adoção</a>
+          </li>
+          <li>
+            <a href="./contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+        <div>
+        <a href="./cadastro.html">
+          <button  class="btn-principal">Crie Sua Conta</button>
+        </a>
+        <a href="./login.html">
+          <button  class="btn-principal .btn-principal-secundario"><i class="fa fa-home" aria-hidden="true"></i></button>
+        </a>
+      </div>
+    </section>
+  </header>
+
+
+  <main class="container">
+    <section>
+      <h1>Cadastro</h1>
+
+    </section>
+    <form id="form" action="" method="">
+      <div>
+        <label for="Nome">Insira seu nome</label><br />
+        <input type="text"  placeholder="Digite seu nome" class="required" oninput="nameValidate()"/>
+        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+      </div>
+      <div>
+        <label for="text">Insira seu email</label><br />
+        <input type="text" name="email" placeholder="Digite seu melhor email" class="required" oninput="emailValidate()" />
+        <span class="span-required">Digite um email válido</span>
+      </div>
+      
+      <div>
+        <label for="password">Insira sua senha:</label><br />
+        <input type="password" name="senha" placeholder="Digite sua senha" class="required" oninput="mainPasswordValidate()" />
+        <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+      </div>
+      <div>
+        <label for="password">Confirme sua senha:</label><br />
+        <input type="password" name="senha" placeholder="Repita a sua senha" class="required" oninput="comparePassword()" />
+        <span class="span-required">Senhas devem ser compatíveis</span>
+      </div>
+      <!--
+              <div>
+              <label for="text">Confirme seu email</label><br />
+              <input type="text" name="email" placeholder="Digite seu melhor email" class="required" oninput="emailValidate()" />
+              <span class="span-required">Digite um email válido</span>
+            </div>
+      -->
+      <div>
+        <h4>Endereço</h4>
+        <label for="text">Logradouro:</label><br />
+        <input type="text" name="endereco" placeholder="Digite o nome da sua rua, avenida, etc" class="required" oninput="ruaValidate()" />
+        <span class="span-required">Logradouro deve ter no mínimo 6 caracteres</span>
+      </div>
+      <div>
+        <label for="text">Insira seu CEP:</label><br />
+        <input type="text" name="cep" placeholder="Ex: 00000-000" class="required" oninput="cepValidate()" />
+        <span class="span-required">Cep deve ter no mínimo 9 caracteres</span>
+      </div>
+      <div>
+        <label for="text">Bairro:</label><br />
+        <input type="text" name="bairro" placeholder="Digite seu bairro" class="required" oninput="bairroValidate()" />
+        <span class="span-required">Bairro deve ter no mínimo 10 caracteres</span>
+      </div>
+      <div>
+        <label for="text">Número da sua casa:</label><br />
+        <input type="text" name="numerodacasa"  placeholder="Digite o número da casa" class="required" oninput="numeroValidate()" />
+        <span class="span-required">Digite um número maior que 0</span>
+      </div>
+      
+      <div>
+        <label for="text">Complemento:</label><br />
+        <input type="text" name="complemento"  placeholder="Digite o complemento da casa" class="required" oninput="complementoValidate()" />
+        <span class="span-required">Complemento deve ter no mínimo 20 caracteres</span>
+      </div>
+      
+      <div class="btn">
+        <button class="btn-principal" type="submit">Cadastrar</button>
+      </div>
+
+      <div class="btn-a">
+        <a href="../index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+      </div>
+
+    </form>
+  </main>
+  <!-- -->
+  <footer class="footer">
+    <section class="container">
+     <p>Todos os direitos reservados à Pet<strong>Proz</strong></p>
+    </section>
+   </footer>
+   <!-- -->
+   <script src="/js/validacao-cadastro.js"></script>
+   <script src="../js/script.js"></script>
+ </body>
+ 
+ </html>

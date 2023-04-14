@@ -1,0 +1,56 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--cor-principal);
+  border-radius: 2rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+form div h4 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--cor-white);
+}
+
+form div label {
+  font-size: 1.8rem;
+  color: var(--cor-white);
+  margin-bottom: -0.5rem;
+}
+
+form div input {
+  height: 5rem;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  color: var(--cor-texto);
+  border-radius: 1rem;
+  border: none;
+}
+
+.btn-a {
+  align-items: flex-end;
+}
+
+.btn-a .fa-arrow-left {
+  border-radius: 0.5rem;
+  border: 1px solid var(--cor-font-extra);
+  padding: 1.5rem;
+  color: var(--cor-font-extra);
+}
+
+.btn-a .fa-arrow-left:hover {
+  border-radius: 0.5rem;
+  border: 1px solid var(--cor-white);
+  padding: 1.5rem;
+  color: var(--cor-white);
+  transition: 1s;
+}

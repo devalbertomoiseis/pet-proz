@@ -1,0 +1,72 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: 1rem auto;
+  padding: 4rem;
+  background-color: var(--cor-principal);
+  border-radius: 2rem;
+}
+
+form h1,
+h4 {
+  color: var(--cor-texto);
+  text-align: center;
+}
+
+form h4 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+form div h4 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--cor-white);
+}
+
+form div label {
+  font-size: 1.8rem;
+  color: var(--cor-white);
+  margin-bottom: -0.5rem;
+}
+
+form div input {
+  font-size: 1.6rem;
+  color: var(--cor-texto);
+  border-radius: 1rem;
+  border: none;
+}
+
+form .div-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+form .div-btn button {
+  width: 14rem;
+}
+
+form div p {
+  color: var(--cor-white);
+  text-align: center;
+  margin-top: -4rem;
+}
+
+form div a {
+  color: var(--cor-font-extra);
+  padding-left: 0.5rem;
+}
+
+.footer {
+  margin-top: 7.2rem;
+}

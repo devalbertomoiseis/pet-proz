@@ -1,0 +1,44 @@
+.container {
+  height: auto;
+  padding: 4rem 2%;
+}
+
+.container section {
+  font-size: 1.8rem;
+  padding: 4rem 0;
+}
+
+.container article {
+  border: 1px solid var(--cor-principal);
+  margin: 2rem 0;
+}
+
+.container article iframe {
+  width: 100%;
+  height: 40rem;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes-sociais div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+.container .redes-sociais .fa-facebook-official {
+  color: var(--cor-principal);
+}
+
+.container .redes-sociais .fa-instagram {
+  color: var(--cor-principal);
+}
+
+.container .redes-sociais .fa-linkedin-square {
+  color: var(--cor-principal);
+}

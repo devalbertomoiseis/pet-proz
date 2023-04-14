@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Poppins:wght@100;300;400;500;600&display=swap");
+
+@import "../css/pages-css/adotar.css";
+@import "../css/pages-css/doacao.css";
+@import "../css/pages-css/cadastro.css";
+@import "../css/pages-css/contato.css";
+@import "../css/pages-css/login.css";
+
+.header {
+  background-color: var(--cor-principal);
+  padding: 20px 0;
+}
+
+.header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header section nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header section .logo {
+  font-weight: 500;
+  font-size: 3.4rem;
+  color: var(--cor-white);
+}
+
+.header section .logo strong {
+  font-size: 3.4rem;
+  color: var(--cor-font-extra);
+}
+
+.header section nav ul li a {
+  color: var(--cor-white);
+}
+
+.header section nav ul li .active {
+  color: var(--cor-font-extra);
+}
+
+/* Sobre */
+
+main .sobre {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  background-color: var(--cor-white);
+  padding: 2rem 0;
+  margin: 0 1rem;
+}
+
+.sobre h1 {
+  font-size: 4.8rem;
+  letter-spacing: 0.2rem;
+  margin-top: 1rem;
+}
+
+.sobre h1 strong {
+  font-size: 4.8rem;
+  color: var(--cor-font-extra);
+}
+.sobre h1:after {
+  width: 4rem;
+  margin: 2rem auto;
+}
+
+.sobre h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin-top: 1rem;
+}
+
+.sobre h3:after {
+  content: "";
+  display: block;
+  background-color: var(--cor-principal);
+  height: 0.4rem;
+  width: 4rem;
+  margin: 1.2rem 0;
+}
+
+.sobre p {
+  max-width: 52rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.4rem;
+  margin-top: 2rem;
+}
+
+.sobre aside img {
+  margin-top: 12rem;
+  height: 360px;
+}
+
+/* ajude */
+.ajude {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.ajude h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0;
+}
+
+.ajude p {
+  max-width: 80rem;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0 4rem 0;
+}
+
+/* como-doar */
+.como-doar {
+  background-color: var(--cor-principal);
+  color: var(--cor-white);
+  padding: 4rem 1rem;
+}
+
+.como-doar h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0 4rem 0;
+  text-align: center;
+  color: var(--cor-white);
+}
+
+.como-doar h3:after {
+  content: "";
+  display: block;
+  background-color: var(--cor-white);
+  height: 0.4rem;
+  width: 4rem;
+  margin: 1.2rem auto;
+}
+
+.como-doar section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.como-doar-div p {
+  margin: 1rem 0 4rem 0;
+  max-width: 40rem;
+  font-size: 1.8rem;
+  line-height: 3rem !important;
+}
+
+.como-doar-div .btn-principal {
+  font-size: 2rem;
+  padding: 1.2rem;
+}
+
+/* salve-vidas */
+.salve-vidas {
+  background-color: var(--cor-white);
+  margin: 6rem 0;
+}
+
+.salve-vidas h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0 4rem 0;
+  text-align: center;
+  color: var(--cor-principal);
+}
+
+.salve-vidas h3:after {
+  content: "";
+  display: block;
+  background-color: var(--cor-principal);
+  height: 0.4rem;
+  width: 4rem;
+  margin: 1.2rem auto;
+}
+
+.salve-vidas .salve-vidas-sub-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.salve-vidas-div {
+  flex: 1;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.salve-vidas-div h4 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  color: var(--cor-h);
+}
+
+.salve-vidas-div button {
+  position: relative;
+  top: -2.4rem;
+  padding: 1rem 2rem;
+
+  background: var(--cor-principal);
+}
+
+.salve-vidas-div p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  padding: 1rem;
+  color: var(--cor-h);
+}
+
+.animais-g-c {
+  background-color: #c6aeed;
+  padding: 4rem 0;
+}
+
+.animais-g-c aside {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.animais-g-c-div {
+  flex: 1;
+  margin-bottom: 3rem;
+}
+
+.animais-g-c-div p {
+  margin-top: 1rem;
+  max-width: 38rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+/**/
+.texto {
+  text-align: center;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  line-height: 3rem;
+}
+.texto h5 {
+  margin: 1.4rem 0;
+}
+.texto p {
+  margin-top: 1rem;
+  padding: 0 3rem;
+  line-height: 3rem;
+}
+
+/* footer */
+.footer {
+  background-color: var(--cor-principal);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--cor-white);
+}
+
+.footer strong {
+  color: var(--cor-font-extra);
+}
+
+#elementoPai {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  color: var(--cor-white);
+  border: 1px solid var(--cor-font-extra);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: -4rem auto 4rem;
+  display: none;
+}
+
+.subtotal {
+  background: var(--cor-principal);
+  color: var(--cor-white);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.subtotal h3 {
+  color: var(--cor-white) !important;
+}
+
+.subtotal span {
+  font-size: 2.4rem;
+  margin-left: 3rem;
+  background-color: var(--cor-font-extra);
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+}
+.container-span {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.container-span-div {
+  width: 100px;
+  height: 60px;
+  margin-left: 1.2rem;
+}
+.container-span div {
+  display: flex;
+}

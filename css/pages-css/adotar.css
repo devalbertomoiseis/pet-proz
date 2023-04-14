@@ -1,0 +1,76 @@
+main h1 {
+  font-size: 3.3rem;
+  letter-spacing: 0.2rem;
+
+  padding: 2rem 0 0rem 0;
+  text-align: center;
+}
+
+main h1 strong {
+  font-size: 3.3rem;
+  color: var(--cor-font-extra);
+}
+
+h1:after {
+  content: "";
+  display: block;
+  background-color: var(--cor-font-extra);
+  height: 0.6rem;
+  width: 12rem;
+  margin: 1rem auto 0rem auto;
+}
+
+.adotar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.adotar-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.adotar-aside {
+  max-width: 20rem;
+  padding: 2rem;
+  margin: 0.5rem;
+  background-color: var(--cor-principal-secundaria);
+  border-radius: 20px;
+}
+
+.adotar-aside h4 {
+  color: var(--white);
+}
+
+.adotar-aside figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.adotar-aside figure img {
+  border: 1px solid var(--cor-h);
+}
+
+.adotar-aside button {
+  margin-top: 1rem;
+  background: var(--cor-principal);
+  color: var(--cor-white);
+}
+
+.adotar-aside button:hover {
+  background: var(--cor-font-extra);
+  color: var(--cor-white);
+}
+
+.adotar-aside div {
+  margin-top: 1rem;
+  margin-left: 0.2rem;
+  gap: 1rem;
+}
+
+footer {
+  margin-top: 4rem;
+}
