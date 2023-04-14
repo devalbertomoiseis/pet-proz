@@ -37,24 +37,23 @@ function mainPasswordValidate() {
 }
 
 let elemento_pai1 = document.getElementById("elementoPai");
-let elemento_pai2 = document.getElementById("elementoPai");
 
 function validar() {
-  if (!(!emailRegex.test(campos[0].value) && campos[1].value.length < 8)) {
-    validar1();
-  } else {
+  if ((!emailRegex.test(campos[0].value)) && campos[1].value.length < 8) {
     validar2();
+  } else {
+    validar1();  
   }
 }
+const span1 = document.createElement("span-h5");
 function validar1() {
-  var titulo = document.createElement("span-h5");
-  titulo.textContent = "Formulário Enviado";
-  elemento_pai1.appendChild(titulo);
+  span1.textContent = "Formulário Enviado";
+  elemento_pai1.appendChild(span1);
   elemento_pai1.style.display = "block";
 }
+const span2 = document.createElement("span-h6");
 function validar2() {
-  var titulo = document.createElement("span-h6");
-  titulo.textContent = "Formulário precisa preencher campos corretamente.";
-  elemento_pai2.appendChild(titulo);
-  elemento_pai2.style.display = "block";
+  span2.textContent = "Formulário precisa preencher campos corretamente.";
+  elemento_pai1.appendChild(span2);
+  elemento_pai1.style.display = "block";
 }
