@@ -26,6 +26,15 @@ p {
   line-height: 1.9rem;
 }
 
+h5{
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 'bold';
+  line-height: 125%;
+  letter-spacing: -1px;
+  color: var(--cor-h);
+}
 
 .span-required {
   font-size: 14px;
